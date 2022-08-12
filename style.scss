@@ -22,6 +22,15 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: var(--main-color);
+}
+
+
+.name {
+    color: #2ECC71;
+}
+
 #btn {
     background-color: #2ECC71;
     padding: 8px 10px;
@@ -50,7 +59,7 @@ html {
 }
 
 .header .flex .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     height: 80px;
     color: var(--black);
     display: flex;
@@ -62,6 +71,8 @@ html {
 .header .flex .logo span {
     color: #2ECC71;
 }
+
+
 
 
 .navbar a {
@@ -86,10 +97,119 @@ html {
     margin-right: 2rem;
 }
 
+/* ------------------------------ */
+/* ------------------------------ */
+
+    .home {
+        height: calc(100vh - 50px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .home .image {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .image img {
+        margin-top: 9rem;
+        width: 400px;
+    }
+
+    .home .content {
+        margin-top: 9rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .content h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .home .content p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .home .content a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: var(--white);
+        border-bottom: 3px solid var(--white);
+                transition: all .3s ease-in-out;
+
+    }
+
+    .home .content a:hover {
+        color: #2ECC71;
+        border-bottom: 3px solid #2ECC71;
+    }
+
+/*--------------------------------*/
+/*--------------------------------*/
+
+/*-------------------------------*/
+// # Media Queries
+/*-------------------------------*/
+
+@media (max-width: 400px) {
+        .home {
+        height: calc(100vh - 50px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+        .home .image {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home .image img {
+        margin-top: 15rem;
+        width: 10px;
+    }
+
+    .home .content {
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .home .content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 50%;
     }
+    /*--------*/
 }
 
 @media (max-width: 768px) {
@@ -121,6 +241,10 @@ html {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
+    .header .flex .logo {
+        height: 50px;
+    }
+
     .header .flex .navbar  a {
     display: block;
     margin: 2rem;
@@ -132,6 +256,47 @@ html {
 
     #btn {
         text-align: center;
+    }
+    /*------------*/
+
+    .home {
+        height: calc(100vh - 50px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+
+    .home .image {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .image img {
+        margin-top: 9rem;
+        width: 400px;
+    }
+
+    .home .content {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .home .content h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
 
 }
