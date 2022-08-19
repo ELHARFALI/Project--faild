@@ -1,0 +1,10 @@
+@import 'global';
+@import 'mixins';
+@import 'variables';
+@import 'header';
+@import 'hero';
+
+body {
+    background-color: $skyBlue;
+    min-height: 100vh;
+}
